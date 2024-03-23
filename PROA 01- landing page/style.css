@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{   
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu' , sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: url(img/imagem\ de\ dundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 48px;
+
+}
+header  .logo{
+    width: 170px;
+}
+.pesquisa ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.navegação .pesquisa{
+    width: 28px;
+    cursor: pointer;
+    filter: invert(1);
+    align-items: center;
+}
+.navegação ul li a{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 3px;
+    border-bottom: 4px solid transparent;
+    transition: all .6s;
+    align-items: center;
+}
+.navegação ul li a:hover{
+    border-bottom: 2px solid #004568;
+}
+
+.navegação .perfil{
+    width: 50px;
+    cursor: pointer;
+    align-items: baseline;
+}
+
+/*main*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50em;
+    margin-top: 1.5em;
+}
+main section{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+
+}
+main section .logocastelo{
+    width: 40em;
+    margin: 1em 0;
+}
+
+main section .bnt-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bnt-box .bnt{
+    padding: 20px 45px;
+    background: #49586a;
+    color: #fff;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #fff;
+    transition: all .3s;
+    font-size: 18px;
+}
+.bnt-box .bnt:hover{
+    background: #2d3846;
+}
+.bnt-box .bnt:focus{
+    background: #2d3846;
+}
+
+main section .text{
+    color: #101010;
+    line-height: 26px;
+    font-size: 20px;
+}
+.bnt-box2{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: #0c6b9b;
+    padding: 15px 45px;
+    margin-top: 2em;
+    border-radius: 5px 5px 0 0;
+    border-bottom:4px solid #fff;
+    font-size: 25px;
+    gap: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.bnt-box2:hover{
+    background: #29abeb;
+}
+
+.bnt-box2 .play{
+    width: 1.4em;
+    filter: invert(1);
+}
+footer .cards{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-left: 30em ;
+    margin-top: 1.5em;
+}
+footer .cards .card{
+    height: 200px;
+    max-width: 500px;
+    box-shadow: 12px 0px 32px 2px #000000;
+    margin-left: -110px;
+    cursor: pointer;
+    transition: all o.25s ease-in-out;
+    overflow: hidden;
+
+}
+footer .cards .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .card:hover{
+    transform: translateY(-16px) rotate(3deg);
+}
+.cards .card:hover ~ .card{
+    transform: translateX(140px);
+}
